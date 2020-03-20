@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    user-select: none;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 4px;
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 400px;
+    background-color: darkgrey;
+    font-family: "Tahoma";
+}
+.elements{
+    background-color: green;
+}
