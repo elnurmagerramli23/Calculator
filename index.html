@@ -7,29 +7,32 @@
     <title>Calculator</title>
 </head>
 <body>
-    <div class="container">
-        <div class="elements output"> <form name="input"><input type="text" name="textview" readonly></form> </div>
-        <div class="elements delete">C</div>
-        <div class="elements backspace">&larr;</div>
-        <div class="elements">+</div>
-        <div class="elements">-</div>
-        <div class="elements">&times;</div>
-        <div class="elements">&divide;</div>
-        <div class="elements">7</div>
-        <div class="elements">8</div>
-        <div class="elements">9</div>
-        <div class="elements">(</div>
-        <div class="elements">4</div>
-        <div class="elements">5</div>
-        <div class="elements">6</div>
-        <div class="elements">)</div>
-        <div class="elements">1</div>
-        <div class="elements">2</div>
-        <div class="elements">3</div>
-        <div class="elements equal">=</div>
-        <div class="elements zero">0</div>
-        <div class="elements">.</div>
+    <div id="calculator">
+        <div class="top">
+            <span class="clear">C</span>
+            <div class="screen"></div>
+        </div>
+        
+        <div class="keys">
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span class="operator">+</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span class="operator">-</span>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span class="operator">÷</span>
+            <span>0</span>
+            <span>.</span>
+            <span class="eval">=</span>
+            <span class="operator">x</span>
+        </div>
     </div>
+
     <script src="assets/js/index.js"></script>
 </body>
 </html>
