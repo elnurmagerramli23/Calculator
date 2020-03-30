@@ -36,7 +36,8 @@ html {
 	height: 80px;
 	width: 100%;
 	position:absolute;
-    top:0; left:0;
+	top:0;
+	left:0;
 	padding: 20px 10px;
 	background: rgba(0, 0, 0, 0.2);
 	font-size: 27px;
@@ -64,7 +65,7 @@ html {
 	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
 	margin: 0 7px 11px 0;
 	color: #ccc;
-	line-height: 50px;
+	line-height: 56px;
 	text-align: center;
 	user-select: none;
 	transition: all 0.2s ease;
@@ -83,10 +84,9 @@ html {
 	background: transparent;
 	box-shadow: none;
 	color: #aaa;
-    width:50px;
+    width:56px;
 	left:5px;
-	transition: .4s all linear;
-	/* border-radius: 150px; */
+	z-index: 1000;
 }
 
 
@@ -101,7 +101,7 @@ html {
 }
 
 .top button.clear:hover {
-    border-radius:150px;
+    border-radius:190px;
 	background: rgba(0,0,0,0.1);
 	color: white;
 }
