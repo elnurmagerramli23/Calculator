@@ -11,12 +11,12 @@ function clearDisplay() {
 
 function insert(value) {
     display.value += value;
-    console.log("inserted new number in display");
+    console.log('inserted new number in display');
 }
 
 function getSign(sign) {
     firstNumber = display.value;
-    console.log("remember new number");
+    console.log('remember new number');
     clearDisplay();
     
 
@@ -34,13 +34,14 @@ function checkVariables() {
     if(!secondeNumber){
         return
     }
-
+	+firstNumber;
+	+secondeNumber;
     getResult(operationSign);
-    console.log("it works");
+    console.log('checking variables');
     
 }
 
-const getSum = () => +firstNumber + +secondeNumber;
+const getSum = () => firstNumber + secondeNumber;
 const getSubtraction = () => firstNumber - secondeNumber;
 const getMultipication = () => firstNumber * secondeNumber;
 const getDivision = () => firstNumber / secondeNumber;
@@ -48,7 +49,7 @@ const getDivision = () => firstNumber / secondeNumber;
 //какой из них равно у тебя?
 // равно у меня перемнная в которую после кейса запишется значение подождипопробую позвонить. ок. может проверить сейчас работает кейс или нет?
 function getResult(operationSign) {
-    console.log("get result");
+    console.log('get result');
     
     switch (operationSign) {
         case '+':
@@ -64,9 +65,10 @@ function getResult(operationSign) {
             result = getDivision();
             break;
         default:
-            console.log('default');
+            console.log('default case');
             
             return;
-    }
+	}
+	clearDisplay();
     display.value = result
 }
